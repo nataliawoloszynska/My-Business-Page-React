@@ -1,0 +1,432 @@
+/* Site Settings */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* Navbar */
+
+.content-container {
+  margin: 0 3%;
+}
+
+.navbar-container {
+  height: 50px;
+  background-color: #4e4e4e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-link {
+  font-weight: 700;
+}
+
+.main-nav-elem {
+  display: none;
+}
+
+.dropdown-menu {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 19px;
+  background-color: #e3e3e3;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 14px;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.inactive {
+  cursor: not-allowed;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+/* Landing Page */
+
+.landing-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.landing-page-shadow {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/background-shadow.png);
+  display: flex;
+  align-items: center;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 215px;
+  align-items: flex-start;
+}
+
+.bigger-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.text {
+  font-weight: 700;
+}
+
+.offer-button {
+  box-sizing: border-box;
+  width: 164px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* About */
+
+.employees-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.employees-header {
+  margin-top: 8%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #152d41;
+}
+
+.employees {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.person-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin: 14% auto;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.first-person-photo {
+  background-image: url(./assets/person1.jpg);
+}
+
+.second-person-photo {
+  background-image: url(./assets/person2.jpg);
+}
+
+.person-name {
+  font-weight: 700;
+  margin-bottom: 5%;
+  color: #000;
+}
+
+.person-about {
+  text-align: justify;
+  color: #000;
+}
+
+/* Offer */
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #405d78;
+}
+
+.offer-header {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  height: fit-content;
+  margin-bottom: 5%;
+}
+
+.box {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  box-shadow: 2px 3px #4e4e4e;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.service {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.service-new {
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e07a64;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/* Footer */
+
+.footer-container {
+  height: fit-content;
+  background-color: #4e4e4e;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.info {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.fa-brands {
+  font-size: 31px;
+  margin-right: 18px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  /* Navbar */
+
+  .main-nav {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .main-nav-elem {
+    display: flex;
+    margin-right: 90px;
+    position: relative;
+  }
+
+  .main-nav-link-contakt {
+    cursor: not-allowed;
+  }
+
+  /* Landing Page */
+
+  .landing-page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 215px;
+    padding-right: 350px;
+  }
+
+  .header-button {
+    transition: color 1s;
+  }
+
+  .offer-button:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+
+  /* About */
+
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+
+  .workers {
+    margin: 80px auto;
+  }
+
+  .person-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .person-container:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .first-person-photo,
+  .second-person-photo {
+    margin: 20px 20px;
+  }
+
+  /* Offer */
+
+  .offer-header {
+    font-size: 36px;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    height: 71px;
+  }
+
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .icons {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .content-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Navbar */
+
+  .main-nav {
+    display: flex;
+  }
+
+  /* About */
+
+  .employees-header {
+    width: 386px;
+    text-align: left;
+  }
+
+  /* Services */
+
+  .offer-header {
+    text-align: left;
+  }
+
+  .services-container {
+    display: grid;
+    width: 740px;
+    height: 440px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    margin: 60px auto;
+  }
+
+  .box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+}
