@@ -6,9 +6,9 @@ const DropdownMenu = () => {
     <div className="dropdown-menu">
       <FontAwesomeIcon icon={faBars} />
       <div className="dropdown-content">
-        <a href="#about">o nas</a>
+        <a href="#employees">o nas</a>
         <a href="#offer">oferta</a>
-        <a className="inactive" href="#">
+        <a className="inactive" href="/">
           kontakt
         </a>
       </div>

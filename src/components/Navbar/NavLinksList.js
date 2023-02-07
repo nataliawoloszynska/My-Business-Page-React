@@ -12,7 +12,7 @@ const NavLinksList = () => {
         </a>
       </li>
       <li className="main-nav-elem">
-        <a className="main-nav-link-contakt" href="#">
+        <a className="main-nav-link-contakt" href="/">
           kontakt
         </a>
       </li>
