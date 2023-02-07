@@ -7,10 +7,10 @@ import {
 const FooterIcons = () => {
   return (
     <div className="icons">
-      <a href="#">
+      <a href="www.facebook.com">
         <FontAwesomeIcon icon={faFacebookSquare} className="fa-brands" />
       </a>
-      <a href="#">
+      <a href="www.instagram.com">
         <FontAwesomeIcon icon={faInstagram} className="fa-brands" />
       </a>
     </div>
