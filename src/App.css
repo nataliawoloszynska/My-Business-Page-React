@@ -241,6 +241,15 @@ body {
   color: #000;
 }
 
+.service-new-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-new-not-display {
+  display: none;
+}
+
 .dot {
   width: 20px;
   height: 20px;

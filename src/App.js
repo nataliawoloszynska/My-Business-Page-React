@@ -6,7 +6,7 @@ import FooterContainer from "./components/Footer/FooterContainer";
 import "./Reset.css";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavbarContainer />
@@ -16,6 +16,6 @@ function App() {
       <FooterContainer />
     </div>
   );
-}
+};
 
 export default App;

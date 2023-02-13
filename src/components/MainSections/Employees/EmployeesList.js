@@ -1,10 +1,10 @@
-import { EMPLOYEES_DATA } from "../../../data/EmployeesData";
+import { employeesData } from "../../../data/EmployeesData";
 import Employee from "./Employee";
 
 const EmployeesList = () => {
   return (
     <div className="employees">
-      {EMPLOYEES_DATA.map((employee) => (
+      {employeesData.map((employee) => (
         <Employee
           key={employee.id}
           isPhoto={employee.photo}

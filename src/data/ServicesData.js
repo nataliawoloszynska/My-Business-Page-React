@@ -1,4 +1,4 @@
-export const SERVICES_DATA = [
+export const servicesData = [
   { id: 1, service: "Usługa 1", isNew: true },
   { id: 2, service: "Usługa 2", isNew: false },
   { id: 3, service: "Usługa 3", isNew: false },
