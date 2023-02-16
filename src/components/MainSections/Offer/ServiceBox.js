@@ -1,10 +1,4 @@
 const ServiceBox = ({ text, isNew }) => {
-  let div;
-  {
-    if (isNew) {
-      div = <div className="dot"></div>;
-    }
-  }
   return (
     <div className="box">
       <h3 className="service">
@@ -19,7 +13,7 @@ const ServiceBox = ({ text, isNew }) => {
           (nowość)
         </span>
       </h3>
-      {div}
+      {isNew && <div className="dot"></div>}
     </div>
   );
 };
