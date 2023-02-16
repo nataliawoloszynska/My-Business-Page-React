@@ -1,1 +1,1 @@
-Live here https://bp-react.netlify.app/
+Live here https://business-page-react.netlify.app/
